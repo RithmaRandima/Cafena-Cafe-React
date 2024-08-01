@@ -22,8 +22,8 @@ const NewsBox = (props) => {
           <p>/</p>
           <p>{props.date}</p>
         </div>
-        <p className="text-gray-500 text-[15px]">{props.message}</p>
-        <p className="text-primary text-[13px] flex items-center gap-2 uppercase font-bold">
+        <p className="text-gray-500 text-[15px] mb-10">{props.message}</p>
+        <p className="text-primary text-[13px] flex items-center gap-2 uppercase font-bold mt-[20px]">
           Read more <FaArrowRightLong />
         </p>
       </div>
