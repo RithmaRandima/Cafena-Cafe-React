@@ -6,6 +6,7 @@ import Services from "./components/Services/Services";
 import Testimonials from "./components/Testimonials/Testimonials";
 import AboutUs from "./components/AboutUS/AboutUs";
 import Products from "./components/Products/Products";
+import News from "./components/News/News";
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
       <Hero />
       <AboutUs />
       <Services />
+      <AppBanner />
       <Products />
       <Testimonials />
-      <AppBanner />
+      <News />
       <Footer />
     </div>
   );
