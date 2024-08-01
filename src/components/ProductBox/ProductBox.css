@@ -1,0 +1,8 @@
+.product-box-overlay {
+  transition: 0.2s;
+}
+
+.product-box:hover .product-box-overlay {
+  height: 60px;
+  opacity: 1;
+}
