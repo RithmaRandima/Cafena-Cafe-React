@@ -3,70 +3,68 @@ import banner from "../../assets/Hero-Background.jpg";
 import appstore from "../../assets/1.png";
 import { motion } from "framer-motion";
 
-const BannerStyle = {
-  backgroundImage: `url(${banner})`,
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-  height: "100vh",
-  width: "100vw",
-};
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import img1 from "../../assets/Hero-Background.jpg";
+import img2 from "../../assets/pexels-ata-y-26648211-6800766.jpg";
+import img3 from "../../assets/Hero-Background.jpg";
+import coffee from "../../assets/—Pngtree—hand drawn coffee cup_5569201.png";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const AppBanner = () => {
+  const rightImages = [img1, img2, img3];
+
+  var settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: false,
+    cssEase: "linear",
+    dots: false,
+  };
   return (
-    <div className="container bg-black my-14">
-      <div
-        className="sm:min-h-[400px] sm:flex sm:justify-end sm:items-center rounded-xl"
-        style={BannerStyle}
-      >
-        <div>
-          <div className="space-y-6 max-w-xl mx-auto">
-            <motion.h1
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                type: "spring",
-                stiffness: 100,
-                damping: 10,
-                delay: 0.2,
-              }}
-              className="text-2xl text-center sm:text-4xl font-semibold"
-            >
-              Download the app
-            </motion.h1>
-            <p className=" text-center sm:px-20">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
-              assumenda enim magni nesciunt impedit natus. Aspernatur inventore
-              dignissimos quo, quos distinctio provident. Laboriosam, dolores
-              dolorum!
-            </p>
-            {/* img links */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{
-                delay: 0.2,
-                type: "spring",
-                damping: 10,
-                stiffness: 100,
-              }}
-              className="flex justify-center items-center gap-4"
-            >
-              <a href="#">
-                <img
-                  src={appstore}
-                  className="max-w-[150px] sm:max-max-[120px] md:max-max-[200px]"
-                  alt=""
-                />
-              </a>
-              <a href="#">
-                <img
-                  src={appstore}
-                  className="max-w-[150px] sm:max-max-[120px] md:max-max-[200px]"
-                  alt=""
-                />
-              </a>
-            </motion.div>
+    <div className="container h-[80vh] flex items-center justify-center mt-12 ">
+      <div className=" w-[90%] h-[65vh] grid grid-cols-1 md:grid-cols-2">
+        <div className="w-[100%] h-[100%] bg-primaryDark text-white pt-14 pl-10 relative">
+          <h1 className="text-[30px] font-bold mb-5 leading-[35px]">
+            TRY THE BEST <br /> COFFEE IN THE CITY
+          </h1>
+          <p className="text-[15px] leading-[25px] w-[400px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            inventore aliquam maxime fugiat non fuga nobis libero facilis optio
+            aperiam labore quasi, minima consequuntur est quaeratporis dolore
+            officia
+          </p>
+
+          <div className="flex items-center mt-6 gap-3 uppercase font-bold text-[14px] tracking-[1px]">
+            Read More <FaArrowRightLong />
+          </div>
+
+          <img
+            src={coffee}
+            className="absolute w-[150px] bottom-[20px] right-[20px]"
+            alt=""
+          />
+        </div>
+
+        <div className="w-[100%] h-[65vh] flex items-center pr-4">
+          <div className="w-[100%] h-[60vh]">
+            <Slider {...settings}>
+              {rightImages.map((images) => {
+                return (
+                  <img
+                    src={images}
+                    className="w-[100%] h-[60vh] object-cover"
+                    alt=""
+                  />
+                );
+              })}
+            </Slider>
           </div>
         </div>
       </div>

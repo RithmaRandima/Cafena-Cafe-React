@@ -1,0 +1,8 @@
+.about-img-box-overlay {
+  transition: 0.3s;
+}
+
+.about-img-box:hover .about-img-box-overlay {
+  height: 100%;
+  opacity: 1;
+}

@@ -4,9 +4,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Background, Parallax } from "react-parallax";
 import BackgroundImage from "../../assets/pexels-ata-y-26648211-6800766.jpg";
-import { StaffData } from "../../data/TestimonialAndStaffData";
 import video from "../../assets/VideoSection.mp4";
 import AboutImgBox from "../AboutImgBox/AboutImgBox";
+import { AboutImgData } from "../../data/AboutImgData";
 
 const AboutUs = () => {
   var settings = {
@@ -93,13 +93,13 @@ const AboutUs = () => {
         {/* about Img Container container */}
         <div className="w-[100vw] md:w-[100vw] h-[260px]">
           <Slider {...settings}>
-            {StaffData.map((data) => {
+            {AboutImgData.map((data) => {
               return (
                 <AboutImgBox
                   img={data.img}
                   key={data.id}
-                  name={data.name}
-                  position={data.position}
+                  title={data.title}
+                  subTitle={data.subTitle}
                 />
               );
             })}
