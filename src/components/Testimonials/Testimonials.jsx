@@ -1,6 +1,6 @@
 import React from "react";
 import { Background, Parallax } from "react-parallax";
-import BackgroundImage from "../../assets/pexels-ata-y-26648211-6800766.jpg";
+import BackgroundImage from "../../assets/Testimonials-Background.jpg";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

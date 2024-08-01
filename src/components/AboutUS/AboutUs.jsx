@@ -3,8 +3,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Background, Parallax } from "react-parallax";
-import BackgroundImage from "../../assets/pexels-ata-y-26648211-6800766.jpg";
-import video from "../../assets/VideoSection.mp4";
+import BackgroundImage from "../../assets/AboutUs-Background.jpg";
+import video from "../../assets/AboutUs-Video.mp4";
 import AboutImgBox from "../AboutImgBox/AboutImgBox";
 import { AboutImgData } from "../../data/AboutImgData";
 
@@ -43,7 +43,7 @@ const AboutUs = () => {
   };
 
   return (
-    <div className="w-[100%] h-[100%]">
+    <div className="w-[100%] h-[100%] ">
       <Parallax
         strength={200}
         className="w-[100%] h-[100%] flex items-center justify-center"

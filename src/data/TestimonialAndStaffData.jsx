@@ -1,17 +1,9 @@
-import user01 from "../assets/user-1.jpg";
-import user02 from "../assets/user-3.jpg";
-import user03 from "../assets/user-1.jpg";
-import user04 from "../assets/user-3.jpg";
-import user05 from "../assets/user-1.jpg";
-import user06 from "../assets/user-3.jpg";
-
-import staff01 from "../assets/staff-3.webp";
-import staff02 from "../assets/staff-4.jpg";
-import staff03 from "../assets/staff-3.webp";
-import staff04 from "../assets/staff-3.webp";
-import staff05 from "../assets/staff-4.jpg";
-import staff06 from "../assets/staff-3.webp";
-import staff07 from "../assets/staff-4.jpg";
+import user01 from "../assets/AboutUsImg-1.jpg";
+import user02 from "../assets/AboutUsImg-1.jpg";
+import user03 from "../assets/AboutUsImg-1.jpg";
+import user04 from "../assets/AboutUsImg-1.jpg";
+import user05 from "../assets/AboutUsImg-1.jpg";
+import user06 from "../assets/AboutUs-Background.jpg";
 
 export const testimonialData = [
   {
