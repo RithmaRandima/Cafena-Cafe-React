@@ -26,7 +26,7 @@ const Footer = () => {
         })}
       </div>
       {/* Footer Middle */}
-      <div className="footer-middle-container container py-[60px]">
+      <div className="footer-middle-container container py-[20px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
           {/* Cafe Open Hour section*/}
           <motion.div
@@ -39,7 +39,7 @@ const Footer = () => {
             }}
             className="space-y-4 px-10 "
           >
-            <h1 className="text-[20px] font-bold uppercase  mb-12">
+            <h1 className="text-[20px] font-bold uppercase  mb-6">
               Opening Hours
             </h1>
 
@@ -99,7 +99,7 @@ const Footer = () => {
               </p>
             </div>
 
-            <h1 className="hidden md:block text-[17px] font-bold uppercase pt-10  mb-12">
+            <h1 className="hidden md:block text-[17px] font-bold uppercase pt-6  mb-6">
               THE LAST STANDARD POST
             </h1>
 
@@ -125,7 +125,7 @@ const Footer = () => {
             }}
             className="space-y-6 pr-7"
           >
-            <h1 className="text-[20px] font-bold uppercase mb-12">
+            <h1 className="text-[20px] font-bold uppercase mb-6">
               latest Posts
             </h1>
             <div className="pb-[10px] border-b-[1px] border-primary/20 ">
@@ -167,9 +167,7 @@ const Footer = () => {
             }}
             className="space-y-6"
           >
-            <h1 className="text-[20px] font-bold uppercase mb-12">
-              Contact US
-            </h1>
+            <h1 className="text-[20px] font-bold uppercase mb-6">Contact US</h1>
             <div className="flex gap-1 flex-col">
               <p className="text-[14px] text-primary">cafena@gmail.com</p>
               <p className="text-[14px] text-gray-400">123-22-334-12345</p>
@@ -196,7 +194,7 @@ const Footer = () => {
         </div>
       </div>
       {/* copy right section */}
-      <div className="flex justify-between items-center bg-black  w-[100%] px-12 pb-[30px] pt-[15px]">
+      <div className="flex justify-between items-center bg-black  w-[100%] px-12 pb-[20px] pt-[15px]">
         <p className="text-white text-center text-[14px]">
           &copy; code Interactive.
         </p>

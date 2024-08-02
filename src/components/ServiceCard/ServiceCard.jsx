@@ -3,17 +3,7 @@ import { motion } from "framer-motion";
 
 const ServiceCard = ({ image, title, subtitle }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{
-        type: "spring",
-        stiffness: 150,
-        damping: 10,
-        delay: 0.3,
-      }}
-      className="text-center p-4 space-y-6"
-    >
+    <div className="text-center p-4 space-y-6">
       <img
         src={image}
         alt=""
@@ -25,7 +15,7 @@ const ServiceCard = ({ image, title, subtitle }) => {
         </h1>
         <h1 className="text-white text-[15px] font-[100]">{subtitle}</h1>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

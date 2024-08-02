@@ -7,10 +7,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import img1 from "../../assets/Hero-Background.jpg";
-import img2 from "../../assets/pexels-ata-y-26648211-6800766.jpg";
-import img3 from "../../assets/Hero-Background.jpg";
-import coffee from "../../assets/—Pngtree—hand drawn coffee cup_5569201.png";
+import img1 from "../../assets/AboutUsImg-1.jpg";
+import img2 from "../../assets/AboutUsImg-2.jpg";
+import img3 from "../../assets/AboutUsImg-7.jpg";
+import coffee from "../../assets/Coffee-cup.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const AppBanner = () => {
@@ -47,7 +47,7 @@ const AppBanner = () => {
 
           <img
             src={coffee}
-            className="absolute w-[150px] bottom-[20px] right-[20px]"
+            className="absolute w-[180px] bottom-[20px] right-[20px]"
             alt=""
           />
         </div>

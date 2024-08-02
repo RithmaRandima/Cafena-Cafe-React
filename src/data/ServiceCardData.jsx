@@ -1,4 +1,6 @@
-import img1 from "../assets/pngtree-flying-cup-of-coffee-with-splash-and-beans-png-image_10144761.png";
+import img1 from "../assets/Espresso.png";
+import img2 from "../assets/MACCHIATO-Img.png";
+import img3 from "../assets/RISTRETTO.webp";
 
 export const serviceCardData = [
   {
@@ -13,28 +15,28 @@ export const serviceCardData = [
     title: "MACCHIATO",
     subtitle: `  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero fuga
          expedita. Optio, libero.`,
-    image: img1,
+    image: img2,
   },
   {
     id: 3,
     title: "RISTRETTO",
     subtitle: `  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero fuga
          expedita. Optio, libero.`,
-    image: img1,
+    image: img3,
   },
   {
     id: 4,
     title: "CAPUCCINO",
     subtitle: `  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero fuga
          expedita. Optio, libero.`,
-    image: img1,
+    image: img2,
   },
   {
     id: 5,
     title: "FRAPPE",
     subtitle: `  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero fuga
          expedita. Optio, libero.`,
-    image: img1,
+    image: img3,
   },
   {
     id: 6,
@@ -48,13 +50,13 @@ export const serviceCardData = [
     title: "MOCHA",
     subtitle: `  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero fuga
          expedita. Optio, libero.`,
-    image: img1,
+    image: img2,
   },
   {
     id: 8,
     title: "GLACE",
     subtitle: `  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero fuga
          expedita. Optio, libero.`,
-    image: img1,
+    image: img3,
   },
 ];
