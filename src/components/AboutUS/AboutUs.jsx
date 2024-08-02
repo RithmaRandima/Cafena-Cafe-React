@@ -7,6 +7,7 @@ import BackgroundImage from "../../assets/AboutUs-Background.jpg";
 import video from "../../assets/AboutUs-Video.mp4";
 import AboutImgBox from "../AboutImgBox/AboutImgBox";
 import { AboutImgData } from "../../data/AboutImgData";
+import { FaPlay } from "react-icons/fa6";
 
 const AboutUs = () => {
   var settings = {
@@ -76,7 +77,7 @@ const AboutUs = () => {
           </div>
 
           <div className=" w-[100%] h-[400px] flex items-center justify-center">
-            <div className="w-[90%]  h-[330px]">
+            <div className="relative w-[90%]  h-[330px]">
               <video
                 autoPlay
                 loop
@@ -86,6 +87,11 @@ const AboutUs = () => {
               >
                 <source src={video} type="video/mp4" />
               </video>
+              <div className="absolute left-[50%] top-[50%] text-primary bg-white w-[50px] h-[50px] rounded-full flex items-center justify-center border-white border-2 hover:bg-transparent hover:border-primary translate-x-[-50%] translate-y-[-50%]">
+                <button>
+                  <FaPlay size={24} />
+                </button>
+              </div>
             </div>
           </div>
         </div>

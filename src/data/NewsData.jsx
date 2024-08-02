@@ -1,4 +1,6 @@
-import img1 from "../assets/istockphoto-1135359711-170667a.webp";
+import img1 from "../assets/news-1.jpg";
+import img2 from "../assets/Footer-Background.jpg";
+import img3 from "../assets/news-3.jpg";
 
 export const newsData = [
   {
@@ -21,7 +23,7 @@ export const newsData = [
     message: ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
         mollitia natus provident ipsum ipsam adipisci reprehenderit veritatis,
         asperiores explicabo quisquam.`,
-    image: img1,
+    image: img2,
   },
   {
     id: 3,
@@ -32,6 +34,6 @@ export const newsData = [
     message: ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
         mollitia natus provident ipsum ipsam adipisci reprehenderit veritatis,
         asperiores explicabo quisquam.`,
-    image: img1,
+    image: img3,
   },
 ];
