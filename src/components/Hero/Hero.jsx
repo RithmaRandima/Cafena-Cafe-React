@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import BgImage from "../../assets/janko-ferlic-h9Iq22JJlGk-unsplash.jpg";
-import CoffeeMain from "../../assets/vecteezy_coffee-coffee-cup-coffee-cup-png-coffee-cup-clipart_29283851.png";
+import BgImage from "../../assets/Hero-Background.jpg";
+import CoffeeMain from "../../assets/Hero-Top-Img.png";
 import Navbar from "../Navbar/Navbar";
 import { motion } from "framer-motion";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 
 const bgImage = {
-  backgroundImage: `url(${BgImage})`,
+  background: ` url(${BgImage})`,
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",

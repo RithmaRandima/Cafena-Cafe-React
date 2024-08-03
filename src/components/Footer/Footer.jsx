@@ -29,16 +29,7 @@ const Footer = () => {
       <div className="footer-middle-container container py-[20px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
           {/* Cafe Open Hour section*/}
-          <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ one: true, amount: 0.5 }}
-            transition={{
-              delay: 0.3,
-              duration: 0.6,
-            }}
-            className="space-y-4 px-10 "
-          >
+          <div className="space-y-4 px-10 ">
             <h1 className="text-[20px] font-bold uppercase  mb-6">
               Opening Hours
             </h1>
@@ -98,33 +89,9 @@ const Footer = () => {
                 9:00 - 22.00
               </p>
             </div>
-
-            <h1 className="hidden md:block text-[17px] font-bold uppercase pt-6  mb-6">
-              THE LAST STANDARD POST
-            </h1>
-
-            <div className="flex w-full gap-1 py-[5px] items-center">
-              <input
-                type="text"
-                placeholder=" Your Email"
-                className="w-[100%] p-[10px] border-[1px] placeholder-primary text-[12px] border-primary bg-transparent"
-              />
-              <button className="w-[50px] h-[40px] bg-primary flex items-center justify-center">
-                <FaPlay />
-              </button>
-            </div>
-          </motion.div>
+          </div>
           {/* footer Post section */}
-          <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ one: true, amount: 0.5 }}
-            transition={{
-              delay: 0.3,
-              duration: 0.6,
-            }}
-            className="space-y-6 pr-7"
-          >
+          <div className="space-y-6 pr-7">
             <h1 className="text-[20px] font-bold uppercase mb-6">
               latest Posts
             </h1>
@@ -155,18 +122,9 @@ const Footer = () => {
               </p>
               <p className="text-primary text-[13px]">14.02.2025</p>
             </div>
-          </motion.div>
+          </div>
           {/* contact section */}
-          <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ one: true, amount: 0.5 }}
-            transition={{
-              delay: 0.3,
-              duration: 0.6,
-            }}
-            className="space-y-6"
-          >
+          <div className="space-y-6">
             <h1 className="text-[20px] font-bold uppercase mb-6">Contact US</h1>
             <div className="flex gap-1 flex-col">
               <p className="text-[14px] text-primary">cafena@gmail.com</p>
@@ -190,7 +148,7 @@ const Footer = () => {
               </p>
               <p className="text-[14px] text-gray-400">New York</p>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
       {/* copy right section */}

@@ -1,8 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import img1 from "../../assets/1.png";
-import ServiceCard from "../ServiceCard/ServiceCard";
-import { serviceCardData } from "../../data/ServiceCardData";
 import ProductBox from "../ProductBox/ProductBox";
 import { productData } from "../../data/ProductData";
 

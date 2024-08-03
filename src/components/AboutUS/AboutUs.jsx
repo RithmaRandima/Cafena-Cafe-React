@@ -89,15 +89,17 @@ const AboutUs = () => {
               </video>
               <div className="absolute left-[50%] top-[50%] text-primary bg-white w-[50px] h-[50px] rounded-full flex items-center justify-center border-white border-2 hover:bg-transparent hover:border-primary translate-x-[-50%] translate-y-[-50%]">
                 <button>
-                  <FaPlay size={24} />
+                  <FaPlay />
                 </button>
               </div>
+              <div className="absolute w-[4px] h-[80%] rounded-[50px] bg-white left-[20px] top-[50%] translate-y-[-50%] "></div>
+              <div className="absolute w-[90%] h-[4px] rounded-[50px] bg-white bottom-[20px] left-[50%] translate-x-[-50%]"></div>
             </div>
           </div>
         </div>
 
         {/* about Img Container container */}
-        <div className="w-[100vw] md:w-[100vw] h-[260px]">
+        <div className="w-[100vw] md:w-[100vw] h-[240px]">
           <Slider {...settings}>
             {AboutImgData.map((data) => {
               return (

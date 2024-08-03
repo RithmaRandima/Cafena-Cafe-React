@@ -1,15 +1,12 @@
 import React from "react";
-import banner from "../../assets/Hero-Background.jpg";
-import appstore from "../../assets/1.png";
-import { motion } from "framer-motion";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import img1 from "../../assets/AboutUsImg-1.jpg";
-import img2 from "../../assets/AboutUsImg-2.jpg";
-import img3 from "../../assets/AboutUsImg-7.jpg";
+import img2 from "../../assets/App-Banner-1.jpg";
+import img3 from "../../assets/App-Banner-2.webp";
 import coffee from "../../assets/Coffee-cup.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 
