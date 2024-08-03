@@ -23,23 +23,13 @@ const Navbar = ({ sidebar, setSidebar }) => {
             <span className="text-primary">Cafena</span>
           </motion.h1>
           {/* Menu Section */}
-          <motion.div
-            initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              type: "spring",
-              stiffness: 100,
-              damping: 10,
-              delay: 1,
-            }}
-            onClick={() => setSidebar(!sidebar)}
-          >
+          <div onClick={() => setSidebar(!sidebar)}>
             {sidebar === true ? (
               <FaTimes className="text-3xl cursor-pointer" />
             ) : (
               <GiHamburgerMenu className="text-3xl cursor-pointer" />
             )}
-          </motion.div>
+          </div>
         </div>
       </div>
     </nav>

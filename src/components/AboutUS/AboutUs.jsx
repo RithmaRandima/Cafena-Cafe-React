@@ -8,6 +8,7 @@ import video from "../../assets/AboutUs-Video.mp4";
 import AboutImgBox from "../AboutImgBox/AboutImgBox";
 import { AboutImgData } from "../../data/AboutImgData";
 import { FaPlay } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 const AboutUs = () => {
   var settings = {
@@ -60,21 +61,63 @@ const AboutUs = () => {
 
         <div className="w-[100vw] md:w-[100%] h-[100%] grid grid-cols-1 md:grid-cols-2 items-center text-white py-10 ">
           <div className="w-[90%] mx-auto ml-[50px]">
-            <p className="mb-2 text-[18px] text-primary font-bold tracking-[2px]">
+            <motion.p
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 10,
+                delay: 1,
+              }}
+              className="mb-2 text-[18px] text-primary font-bold tracking-[2px]"
+            >
               About Us
-            </p>
-            <h1 className="font-bold text-[33px] mb-6">USE OUR APPLICATION.</h1>
-            <p className="text-[15px] md:text-[17px] leading-[20px] md:leading-[25px] mb-[20px] text-justify">
+            </motion.p>
+            <motion.h1
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 10,
+                delay: 1,
+              }}
+              className="font-bold text-[33px] mb-6"
+            >
+              USE OUR APPLICATION.
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 10,
+                delay: 1,
+              }}
+              className="text-[15px] md:text-[17px] leading-[20px] md:leading-[25px] mb-[20px] text-justify"
+            >
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
               praesentium ducimus dolorem provident aut aspernatur porro dolores
               expedita, aliquid vitae deleniti officia, aperiam nisi recusandae
               enim maiores error unde. Repellendus nulla voluptatum, eum nostrum
               delectus consequuntur molestias quae optio saepe, voluptatem
               dignissimos
-            </p>
-            <button className="uppercase bg-primaryDark font-extrabold text-[12px] tracking-[2px] px-[20px] py-[10px] text-white hover:scale-90 duration-200">
+            </motion.p>
+            <motion.button
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 10,
+                delay: 1,
+              }}
+              className="uppercase bg-primaryDark font-extrabold text-[12px] tracking-[2px] px-[20px] py-[10px] text-white hover:scale-90 duration-200"
+            >
               read More
-            </button>
+            </motion.button>
           </div>
 
           <div className=" w-[100%] h-[400px] flex items-center justify-center">

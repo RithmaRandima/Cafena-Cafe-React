@@ -26,20 +26,10 @@ const Hero = () => {
           {/* Hero Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center h-[100vh]">
             {/* Text Content Section */}
-            <div className=" text-lightOrange mt-[100px] md:mt-0 p-4 space-y-28">
-              <motion.h1
-                initial={{ opacity: 0, y: -100 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 100,
-                  damping: 10,
-                  delay: 1,
-                }}
-                className="text-7xl font-bold leading-tight ml-14 md:mt-[70px] md:ml-[80px]"
-              >
+            <div className=" text-white mt-[100px] md:mt-0 p-4 space-y-28">
+              <h1 className="text-[55px] font-bold leading-tight ml-14 md:mt-[20px] md:ml-[40px] w-full">
                 Coffee Haven
-              </motion.h1>
+              </h1>
               <motion.div
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +41,7 @@ const Hero = () => {
                 }}
                 className="relative"
               >
-                <div className="relative z-10 space-y-4">
+                <div className="relative z-10 space-y-4 ">
                   <h1 className="text-[22px]">
                     Start Your Day With Your Black Coffee
                   </h1>
@@ -62,7 +52,7 @@ const Hero = () => {
                     earum, voluptatem dolorem aperiam beatae expedita rem!
                   </h1>
                 </div>
-                <div className="absolute -bottom-7 -left-10 w-[320px] h-[150px] bg-white/20"></div>
+                <div className="absolute -bottom-7 -left-10 w-[350px] h-[150px] bg-black/70"></div>
               </motion.div>
             </div>
             {/* Hero Image Section */}
@@ -93,21 +83,11 @@ const Hero = () => {
                 className="absolute h-[180px] w-[180px] top-20 right-[10px]  z-10 border-[20px] border-primary rounded-full"
               ></motion.div>
               {/* big Text Section */}
-              <motion.div
-                initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 100,
-                  damping: 10,
-                  delay: 1,
-                }}
-                className="absolute top-[10px] left-[450px] z-[1]"
-              >
-                <h1 className="text-[65px] scale-150 font-bold text-white/40 leading-none">
+              <div className="absolute top-[30px] left-[500px] z-[1]">
+                <h1 className="text-[65px] scale-150 font-bold text-white/20 leading-none">
                   Rest Relax Review
                 </h1>
-              </motion.div>
+              </div>
             </div>
             {/* Third Text Section  */}
             <motion.div
@@ -131,7 +111,7 @@ const Hero = () => {
                     earum, voluptatem dolorem aperiam beatae expedita rem!
                   </h1>
                 </div>
-                <div className="absolute -top-6 -right-5 w-[350px] h-[180px] bg-black"></div>
+                <div className="absolute -top-10 -right-5 w-[350px] h-[180px] bg-white/20"></div>
               </div>
             </motion.div>
           </div>
