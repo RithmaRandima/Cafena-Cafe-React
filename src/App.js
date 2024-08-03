@@ -7,11 +7,13 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import AboutUs from "./components/AboutUS/AboutUs";
 import Products from "./components/Products/Products";
 import News from "./components/News/News";
+import Newsletter from "./components/Newsletter/Newsletter";
 
 function App() {
   return (
     <div className="overflow-x-hidden">
       <Hero />
+      <Newsletter />
       <AboutUs />
       <Services />
       <AppBanner />

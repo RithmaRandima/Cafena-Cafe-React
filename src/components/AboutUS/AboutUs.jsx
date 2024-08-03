@@ -47,6 +47,7 @@ const AboutUs = () => {
     <div className="w-[100%] h-[100%] ">
       <Parallax
         strength={200}
+        blur={100}
         className="w-[100%] h-[100%] flex items-center justify-center"
       >
         <Background className="custom-bg w-[100vw] h-[100%]">
@@ -59,19 +60,19 @@ const AboutUs = () => {
 
         <div className="w-[100vw] md:w-[100%] h-[100%] grid grid-cols-1 md:grid-cols-2 items-center text-white py-10 ">
           <div className="w-[90%] mx-auto ml-[50px]">
-            <p className="mb-2">About Us</p>
-            <h1 className="font-bold text-[33px]">USE OUR APPLICATION.</h1>
-            <hr className="my-6" />
-            <p className="text-[15px] md:text-[17px] leading-[20px] md:leading-[25px] mb-[20px]">
+            <p className="mb-2 text-[18px] text-primary font-bold tracking-[2px]">
+              About Us
+            </p>
+            <h1 className="font-bold text-[33px] mb-6">USE OUR APPLICATION.</h1>
+            <p className="text-[15px] md:text-[17px] leading-[20px] md:leading-[25px] mb-[20px] text-justify">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
               praesentium ducimus dolorem provident aut aspernatur porro dolores
               expedita, aliquid vitae deleniti officia, aperiam nisi recusandae
               enim maiores error unde. Repellendus nulla voluptatum, eum nostrum
               delectus consequuntur molestias quae optio saepe, voluptatem
-              dignissimos laboriosam deserunt ut illum similique ex, aspernatur
-              architecto.
+              dignissimos
             </p>
-            <button className="uppercase bg-primaryDark font-extrabold text-[12px] tracking-[2px] px-[20px] py-[15px] text-white">
+            <button className="uppercase bg-primaryDark font-extrabold text-[12px] tracking-[2px] px-[20px] py-[10px] text-white hover:scale-90 duration-200">
               read More
             </button>
           </div>
@@ -87,7 +88,7 @@ const AboutUs = () => {
               >
                 <source src={video} type="video/mp4" />
               </video>
-              <div className="absolute left-[50%] top-[50%] text-primary bg-white w-[50px] h-[50px] rounded-full flex items-center justify-center border-white border-2 hover:bg-transparent hover:border-primary translate-x-[-50%] translate-y-[-50%]">
+              <div className="absolute left-[50%] top-[50%] text-primary bg-white w-[60px] h-[60px] rounded-full flex items-center justify-center   hover:scale-90 translate-x-[-50%] translate-y-[-50%] duration-200">
                 <button>
                   <FaPlay />
                 </button>

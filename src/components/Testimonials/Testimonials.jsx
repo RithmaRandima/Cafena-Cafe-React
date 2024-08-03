@@ -22,7 +22,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="w-[100%] h-[75vh]">
+    <div className="w-[100%] h-[60vh]">
       <Parallax
         strength={200}
         className="w-[100%] h-[100%] flex items-center justify-center p-2"
