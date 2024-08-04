@@ -26,8 +26,8 @@ const Hero = () => {
           {/* Hero Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center h-[100vh]">
             {/* Text Content Section */}
-            <div className=" text-white mt-[100px] md:mt-0 p-4 space-y-28">
-              <h1 className="text-[55px] font-bold leading-tight ml-14 md:mt-[20px] md:ml-[40px] w-full">
+            <div className=" text-white mt-[90px] md:mt-0 p-4 space-y-28">
+              <h1 className="hero-left-top-text text-[55px] md:text-[75px] font-bold leading-tight ml-[30px] md:mt-[20px] md:ml-[40px] w-full">
                 Coffee Haven
               </h1>
               <motion.div
@@ -41,7 +41,7 @@ const Hero = () => {
                 }}
                 className="relative"
               >
-                <div className="relative z-10 space-y-4 ">
+                <div className="relative z-10 space-y-4  hidden md:block">
                   <h1 className="text-[22px]">
                     Start Your Day With Your Black Coffee
                   </h1>
@@ -52,11 +52,11 @@ const Hero = () => {
                     earum, voluptatem dolorem aperiam beatae expedita rem!
                   </h1>
                 </div>
-                <div className="absolute -bottom-7 -left-10 w-[350px] h-[150px] bg-black/70"></div>
+                <div className="hidden md:block absolute -bottom-7 -left-10 w-[350px] h-[150px] bg-black/70"></div>
               </motion.div>
             </div>
             {/* Hero Image Section */}
-            <div className="relative">
+            <div className="relative top-[-130px] md:top-[0]">
               <motion.img
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -67,7 +67,7 @@ const Hero = () => {
                   delay: 1,
                 }}
                 src={CoffeeMain}
-                className="relative z-40 h-[300px]  md:h-[500px] img-shadow object-contain"
+                className="relative z-40 h-[250px]  md:h-[500px] img-shadow object-contain"
                 alt=""
               />
               {/* Ring Circle */}
@@ -80,11 +80,11 @@ const Hero = () => {
                   damping: 10,
                   delay: 1,
                 }}
-                className="absolute h-[180px] w-[180px] top-20 right-[10px]  z-10 border-[20px] border-primary rounded-full"
+                className="absolute h-[130px] w-[130px] md:h-[180px] md:w-[180px] top-[100px] right-[-10px] md:top-20 md:right-[10px]  z-10 border-[20px] border-primary rounded-full"
               ></motion.div>
               {/* big Text Section */}
-              <div className="absolute top-[30px] left-[500px] z-[1]">
-                <h1 className="text-[65px] scale-150 font-bold text-white/20 leading-none">
+              <div className="hero-big-text absolute top-[50px] left-[-20px] md:top-[30px]  md:left-[450px] z-[1]">
+                <h1 className="text-[75px] scale-150 font-bold text-white/15 leading-none tracking-[6px]">
                   Rest Relax Review
                 </h1>
               </div>
@@ -99,7 +99,7 @@ const Hero = () => {
                 damping: 10,
                 delay: 0.9,
               }}
-              className=" text-lightOrange mt-[100px] md:mt-[350px] p-4 space-y-28"
+              className=" text-lightOrange mt-[-130px] md:mt-[350px] p-4 space-y-28"
             >
               <div className="relative">
                 <div className="relative z-10 space-y-4">
@@ -119,19 +119,19 @@ const Hero = () => {
 
         {/* Sidebar Menu Section */}
         {sidebar && (
-          <div className="overflow-hidden absolute top-0 right-0 w-[140px] h-full bg-gradient-to-b from-primary/80 to bg-primaryDark/80 backdrop-blur-sm z-10">
+          <div className="overflow-hidden absolute top-0 right-0 w-[110px] h-full bg-black backdrop-blur-sm z-10">
             <div className="w-full h-full flex justify-center items-center">
               <div className="flex flex-col items-center justify-center gap-6 text-white">
                 {/* line */}
                 <div className="w-[1px] h-[70px] bg-white"></div>
                 {/* Social Icons */}
-                <div className="inline-block p-2 rounded-full cursor-pointer border border-white">
+                <div className="inline-block p-2 rounded-full cursor-pointer border border-white hover:bg-white hover:text-black">
                   <FaFacebookF className="text-2xl" />
                 </div>
-                <div className="inline-block p-2 rounded-full cursor-pointer border border-white">
+                <div className="inline-block p-2 rounded-full cursor-pointer border border-white hover:bg-white hover:text-black">
                   <FaTwitter className="text-2xl" />
                 </div>
-                <div className="inline-block p-2 rounded-full cursor-pointer border border-white">
+                <div className="inline-block p-2 rounded-full cursor-pointer border border-white hover:bg-white hover:text-black">
                   <FaInstagram className="text-2xl" />
                 </div>
                 <div className="w-[1px] h-[70px] bg-white"></div>

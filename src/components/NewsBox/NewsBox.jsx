@@ -3,7 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const NewsBox = (props) => {
   return (
-    <div className="product-box md:w-[95%] py-20">
+    <div className="news-box md:w-[95%] pb-5 overflow-hidden hover:scale-105 duration-300 hover:shadow-lg hover:shadow-black h-fit md:mt-20 mb-10 ">
       <div className="relative w-[100%] h-[230px] cursor-pointer">
         <img
           src={props.image}
@@ -11,7 +11,7 @@ const NewsBox = (props) => {
           className="w-[100%] h-[100%] object-cover"
         />
       </div>
-      <div className="space-y-2 mt-[15px] pl-3">
+      <div className="space-y-3 mt-[15px] px-3">
         <h1 className="uppercase font-extrabold text-white cursor-pointer text-[21px] hover:text-primary">
           {props.title}
         </h1>

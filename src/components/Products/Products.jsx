@@ -44,7 +44,9 @@ const Products = () => {
     <div className="container my-16 space-y-4">
       {/* header Section */}
       <div className="text-center max-w-lg mx-auto mb-[30px]">
-        <p className="text-primary text-[20px]">Choose one of our flavours</p>
+        <p className="sub-text text-primary text-[20px]">
+          Choose one of our flavours
+        </p>
         <h1 className="text-[35px] font-bold text-white mt-2">
           COFFEE BUILD YOUR BASE.
         </h1>

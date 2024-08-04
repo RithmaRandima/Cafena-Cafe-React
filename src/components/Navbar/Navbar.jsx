@@ -18,16 +18,21 @@ const Navbar = ({ sidebar, setSidebar }) => {
               damping: 10,
               delay: 0.2,
             }}
-            className="text-2xl font-semibold uppercase relative"
+            className="text-2xl relative bg-white px-2 pb-3 pr-4 rounded-tr-full rounded-bl-full "
           >
-            <span className="text-primary">Cafena</span>
+            <span className="font-bold text-[20px] tracking-[2px] text-black">
+              Cafena
+            </span>
+            <p className="absolute text-[10px] font-extrabold left-7 bottom-[-5px] text-primaryDark">
+              Take The Risk
+            </p>
           </motion.h1>
           {/* Menu Section */}
           <div onClick={() => setSidebar(!sidebar)}>
             {sidebar === true ? (
-              <FaTimes className="text-3xl cursor-pointer" />
+              <FaTimes className="text-[25px] cursor-pointer" />
             ) : (
-              <GiHamburgerMenu className="text-3xl cursor-pointer" />
+              <GiHamburgerMenu className="text-[25px] cursor-pointer " />
             )}
           </div>
         </div>

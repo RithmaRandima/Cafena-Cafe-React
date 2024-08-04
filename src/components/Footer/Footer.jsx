@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <div className="pt-12 text-white overflow-y-hidden">
       {/* Footer Top Images */}
-      <div className="w-[100%] h-[150px] bg-red-700 hidden md:grid grid-cols-4 md:grid-cols-8">
+      <div className="w-[100%] h-[150px] hidden md:grid grid-cols-4 md:grid-cols-8">
         {FooterTopData.map((image) => {
           return <FooterTopImgBox img={image} />;
         })}
@@ -91,7 +91,7 @@ const Footer = () => {
             </div>
           </div>
           {/* footer Post section */}
-          <div className="space-y-6 pr-7">
+          <div className="space-y-6 md:pr-7 text-center md:text-left w-[70%] md:w-[100%] mx-auto">
             <h1 className="text-[20px] font-bold uppercase mb-6">
               latest Posts
             </h1>
@@ -124,7 +124,7 @@ const Footer = () => {
             </div>
           </div>
           {/* contact section */}
-          <div className="space-y-6">
+          <div className="space-y-6 px-10 text-center md:text-left w-[70%] md:w-[100%] mx-auto">
             <h1 className="text-[20px] font-bold uppercase mb-6">Contact US</h1>
             <div className="flex gap-1 flex-col">
               <p className="text-[14px] text-primary">cafena@gmail.com</p>
@@ -152,8 +152,8 @@ const Footer = () => {
         </div>
       </div>
       {/* copy right section */}
-      <div className="flex justify-between items-center bg-black  w-[100%] px-12 pb-[20px] pt-[15px]">
-        <p className="text-white text-center text-[14px]">
+      <div className="flex justify-between items-center bg-black  w-[100%] md:px-12 px-6 pb-[20px] pt-[15px]">
+        <p className="hidden md:block text-white text-center text-[14px]">
           &copy; code Interactive.
         </p>
         <div className="flex gap-6 items-center text-[20px]">

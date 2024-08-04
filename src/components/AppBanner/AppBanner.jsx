@@ -25,9 +25,9 @@ const AppBanner = () => {
     dots: false,
   };
   return (
-    <div className="container h-[80vh] flex items-center justify-center mt-12 ">
-      <div className=" w-[90%] h-[65vh] grid grid-cols-1 md:grid-cols-2">
-        <div className="w-[100%] h-[100%] bg-primaryDark text-white pt-14 pl-10 relative">
+    <div className="container h-[100%h] md:h-[80vh] flex items-center justify-center md:mt-12 ">
+      <div className=" w-[90%] h-[100%] md:h-[65vh]  grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-0">
+        <div className="w-[100%] h-[100%] bg-primaryDark text-white pt-14 pl-10 relative mb-[50px]">
           <h1 className="text-[30px] font-bold mb-5 leading-[35px]">
             TRY THE BEST <br /> COFFEE IN THE CITY
           </h1>
@@ -49,8 +49,8 @@ const AppBanner = () => {
           />
         </div>
 
-        <div className="w-[100%] h-[65vh] flex items-center pr-4">
-          <div className="w-[100%] h-[60vh]">
+        <div className="w-[100%] h-[65vh] flex items-center md:pr-4">
+          <div className="w-[100%] h-[65vh] md:h-[60vh] mx-auto">
             <Slider {...settings}>
               {rightImages.map((images) => {
                 return (

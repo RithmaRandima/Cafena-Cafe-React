@@ -4,7 +4,7 @@ import { FaClipboardList, FaStar } from "react-icons/fa6";
 
 const ProductBox = (props) => {
   return (
-    <div className="product-box md:w-[90%] mx-auto m-3">
+    <div className="product-box w-[95%] md:w-[90%] mx-auto m-3">
       <div className="relative w-[100%] h-[230px] cursor-pointer">
         <img
           src={props.image}

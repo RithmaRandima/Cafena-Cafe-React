@@ -45,13 +45,13 @@ const AboutUs = () => {
   };
 
   return (
-    <div className="w-[100%] h-[100%] ">
+    <div className="w-[100%] h-[100%] overflow-hidden">
       <Parallax
         strength={200}
         blur={100}
         className="w-[100%] h-[100%] flex items-center justify-center"
       >
-        <Background className="custom-bg w-[100vw] h-[100%]">
+        <Background className="custom-bg w-[100vw] h-[200vh] md:h-[100%]">
           <img
             src={BackgroundImage}
             alt="fill murray"
@@ -62,8 +62,8 @@ const AboutUs = () => {
         <div className="w-[100vw] md:w-[100%] h-[100%] grid grid-cols-1 md:grid-cols-2 items-center text-white py-10 ">
           <div className="w-[90%] mx-auto ml-[50px]">
             <motion.p
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{
                 type: "spring",
                 stiffness: 100,
@@ -75,8 +75,8 @@ const AboutUs = () => {
               About Us
             </motion.p>
             <motion.h1
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{
                 type: "spring",
                 stiffness: 100,
@@ -88,8 +88,8 @@ const AboutUs = () => {
               USE OUR APPLICATION.
             </motion.h1>
             <motion.p
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{
                 type: "spring",
                 stiffness: 100,
@@ -106,13 +106,13 @@ const AboutUs = () => {
               dignissimos
             </motion.p>
             <motion.button
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{
                 type: "spring",
                 stiffness: 100,
                 damping: 10,
-                delay: 1,
+                delay: 0.8,
               }}
               className="uppercase bg-primaryDark font-extrabold text-[12px] tracking-[2px] px-[20px] py-[10px] text-white hover:scale-90 duration-200"
             >
