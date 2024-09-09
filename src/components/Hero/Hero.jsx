@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BgImage from "../../assets/Hero-Background.jpg";
+import BgImage from "../../assets/Hero-Background.jpeg";
 import CoffeeMain from "../../assets/Hero-Top-Img.png";
 import Navbar from "../Navbar/Navbar";
 import { motion } from "framer-motion";

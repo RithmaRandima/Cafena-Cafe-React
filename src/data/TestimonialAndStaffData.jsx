@@ -1,9 +1,9 @@
-import user01 from "../assets/AboutUsImg-1.jpg";
-import user02 from "../assets/AboutUsImg-1.jpg";
-import user03 from "../assets/AboutUsImg-1.jpg";
-import user04 from "../assets/AboutUsImg-1.jpg";
-import user05 from "../assets/AboutUsImg-1.jpg";
-import user06 from "../assets/AboutUs-Background.jpg";
+import user01 from "../assets/AboutUsImg-1.jpeg";
+import user02 from "../assets/AboutUsImg-1.jpeg";
+import user03 from "../assets/AboutUsImg-1.jpeg";
+import user04 from "../assets/AboutUsImg-1.jpeg";
+import user05 from "../assets/AboutUsImg-1.jpeg";
+import user06 from "../assets/AboutUs-Background.jpeg";
 
 export const testimonialData = [
   {

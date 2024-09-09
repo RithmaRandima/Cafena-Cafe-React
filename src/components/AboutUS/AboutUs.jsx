@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Background, Parallax } from "react-parallax";
-import BackgroundImage from "../../assets/AboutUs-Background.jpg";
+import BackgroundImage from "../../assets/AboutUs-Background.jpeg";
 import video from "../../assets/AboutUs-Video.mp4";
 import AboutImgBox from "../AboutImgBox/AboutImgBox";
 import { AboutImgData } from "../../data/AboutImgData";

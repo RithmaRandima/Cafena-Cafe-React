@@ -2,14 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import {
   FaFacebook,
-  FaGoogle,
   FaGooglePlusG,
   FaInstagram,
   FaLinkedinIn,
-  FaMapLocation,
-  FaPhone,
-  FaPlay,
-  FaTelegram,
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa6";

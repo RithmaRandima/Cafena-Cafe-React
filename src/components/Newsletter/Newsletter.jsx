@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import img1 from "../../assets/Newsletter-1.avif";
-import img2 from "../../assets/Newsletter-2.jpg";
+import img2 from "../../assets/Newsletter-2.jpeg";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Newsletter = () => {

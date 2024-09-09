@@ -1,8 +1,8 @@
 import img1 from "../assets/product-1.avif";
 import img2 from "../assets/product-2.avif";
 import img3 from "../assets/product-3.webp";
-import img4 from "../assets/AboutUsImg-1.jpg";
-import img5 from "../assets/product-5.jpg";
+import img4 from "../assets/AboutUsImg-1.jpeg";
+import img5 from "../assets/product-5.jpeg";
 import img6 from "../assets/product-6.webp";
 
 export const productData = [
@@ -32,7 +32,7 @@ export const productData = [
     title: "Coffee Pot",
     oldPrice: 200,
     newPrice: 100,
-    image: img1,
+    image: img4,
   },
   {
     id: 5,

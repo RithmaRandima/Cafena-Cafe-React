@@ -4,8 +4,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import img1 from "../../assets/AboutUsImg-1.jpg";
-import img2 from "../../assets/App-Banner-1.jpg";
+import img1 from "../../assets/AboutUsImg-1.jpeg";
+import img2 from "../../assets/App-Banner-1.jpeg";
 import img3 from "../../assets/App-Banner-2.webp";
 import coffee from "../../assets/Coffee-cup.png";
 import { FaArrowRightLong } from "react-icons/fa6";
