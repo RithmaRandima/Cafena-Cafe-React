@@ -27,11 +27,11 @@ const AppBanner = () => {
   return (
     <div className="container h-[100%h] md:h-[80vh] flex items-center justify-center md:mt-12 ">
       <div className=" w-[90%] h-[100%] md:h-[65vh]  grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-0">
-        <div className="w-[100%] h-[100%] bg-primaryDark text-white pt-14 pl-10 relative mb-[50px]">
+        <div className="w-[100%] h-[100%] bg-primaryDark text-white px-4 md:px-0 pt-14 md:pl-10 relative mb-[50px]">
           <h1 className="text-[30px] font-bold mb-5 leading-[35px]">
             TRY THE BEST <br /> COFFEE IN THE CITY
           </h1>
-          <p className="text-[15px] leading-[25px] w-[400px]">
+          <p className="text-[15px] leading-[25px] md:w-[400px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
             inventore aliquam maxime fugiat non fuga nobis libero facilis optio
             aperiam labore quasi, minima consequuntur est quaeratporis dolore
@@ -49,14 +49,14 @@ const AppBanner = () => {
           />
         </div>
 
-        <div className="w-[100%] h-[65vh] flex items-center md:pr-4">
-          <div className="w-[100%] h-[65vh] md:h-[60vh] mx-auto">
+        <div className="w-[100%] h-[40vh] md:h-[65vh] flex items-center md:pr-4">
+          <div className="w-[100%] h-[45vh] md:h-[65vh] mx-auto">
             <Slider {...settings}>
               {rightImages.map((images) => {
                 return (
                   <img
                     src={images}
-                    className="w-[100%] h-[60vh] object-cover"
+                    className="w-[100%] h-[40vh] md:h-[65vh] object-cover"
                     alt=""
                   />
                 );

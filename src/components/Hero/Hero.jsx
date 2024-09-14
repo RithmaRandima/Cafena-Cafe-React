@@ -11,7 +11,6 @@ const bgImage = {
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
-  height: "100vh",
   width: "100vw",
 };
 
@@ -19,15 +18,15 @@ const Hero = () => {
   const [sidebar, setSidebar] = useState(false);
 
   return (
-    <main style={bgImage}>
-      <section className="relative h-[100vh] overflow-hidden w-full">
+    <main style={bgImage} className="h-[80vh] md:h-[100vh]">
+      <section className="relative h-[80vh] md:h-[100vh] overflow-hidden w-full">
         <div className="container">
           <Navbar sidebar={sidebar} setSidebar={setSidebar} />
           {/* Hero Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center h-[100vh]">
             {/* Text Content Section */}
-            <div className=" text-white mt-[90px] md:mt-0 p-4 space-y-28">
-              <h1 className="hero-left-top-text text-[55px] md:text-[75px] font-bold leading-tight ml-[30px] md:mt-[20px] md:ml-[40px] w-full">
+            <div className=" text-white mt-[50px] md:mt-0 p-4 space-y-28">
+              <h1 className="hero-left-top-text text-[65px] md:text-[75px] font-bold leading-tight ml-[30px] md:mt-[20px] md:ml-[40px] w-full">
                 Coffee Haven
               </h1>
               <motion.div
@@ -56,7 +55,7 @@ const Hero = () => {
               </motion.div>
             </div>
             {/* Hero Image Section */}
-            <div className="relative top-[-130px] md:top-[0]">
+            <div className="relative top-[-220px] md:top-[0]">
               <motion.img
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -67,7 +66,7 @@ const Hero = () => {
                   delay: 1,
                 }}
                 src={CoffeeMain}
-                className="relative z-40 h-[250px]  md:h-[500px] img-shadow object-contain"
+                className="relative z-40 h-[270px]  md:h-[500px] img-shadow object-contain"
                 alt=""
               />
               {/* Ring Circle */}
@@ -80,11 +79,11 @@ const Hero = () => {
                   damping: 10,
                   delay: 1,
                 }}
-                className="absolute h-[130px] w-[130px] md:h-[180px] md:w-[180px] top-[100px] right-[-10px] md:top-20 md:right-[10px]  z-10 border-[20px] border-primary rounded-full"
+                className="absolute h-[150px] w-[150px] md:h-[180px] md:w-[180px] top-[100px] right-[-10px] md:top-20 md:right-[10px]  z-10 border-[20px] border-primary rounded-full"
               ></motion.div>
               {/* big Text Section */}
-              <div className="hero-big-text absolute top-[50px] left-[-20px] md:top-[30px]  md:left-[450px] z-[1]">
-                <h1 className="text-[75px] scale-150 font-bold text-white/15 leading-none tracking-[6px]">
+              <div className="hero-big-text absolute top-[50px] left-[0px] md:top-[30px]  md:left-[450px] z-[1]">
+                <h1 className="text-[65px] md:text-[75px] scale-150 font-bold text-white/15 leading-none tracking-[6px]">
                   Rest Relax Review
                 </h1>
               </div>
@@ -101,7 +100,7 @@ const Hero = () => {
               }}
               className=" text-lightOrange mt-[-130px] md:mt-[350px] p-4 space-y-28"
             >
-              <div className="relative">
+              <div className="relative top-[-140px] md:top-0">
                 <div className="relative z-10 space-y-4">
                   <h1 className="text-2xl">Black LifeStyle Lovers,</h1>
                   <h1 className="text-sm opacity-55 leading-loose">

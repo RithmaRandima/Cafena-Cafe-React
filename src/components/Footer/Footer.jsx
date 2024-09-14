@@ -86,7 +86,7 @@ const Footer = () => {
             </div>
           </div>
           {/* footer Post section */}
-          <div className="space-y-6 md:pr-7 text-center md:text-left w-[70%] md:w-[100%] mx-auto">
+          <div className="hidden md:block space-y-6 md:pr-7 text-center md:text-left w-[70%] md:w-[100%] mx-auto">
             <h1 className="text-[20px] font-bold uppercase mb-6">
               latest Posts
             </h1>
@@ -130,15 +130,23 @@ const Footer = () => {
               <p className="text-[14px] text-gray-400">New York</p>
             </div>
 
-            <h1 className="font-bold uppercase ">Cafena Coffee Shop</h1>
-            <div className="flex gap-1 flex-col">
-              <p className="text-[14px] text-gray-400">2606 Saints Alley</p>
-              <p className="text-[14px] text-gray-400">Tampa, FL 33602</p>
+            <h1 className="hidden md:block font-bold uppercase ">
+              Cafena Coffee Shop
+            </h1>
+            <div className="hidden md:flex gap-1 flex-col">
+              <p className="hidden md:block text-[14px] text-gray-400">
+                2606 Saints Alley
+              </p>
+              <p className="hidden md:block text-[14px] text-gray-400">
+                Tampa, FL 33602
+              </p>
             </div>
 
-            <h1 className="font-bold uppercase ">Cafena Cafe</h1>
-            <div className="flex gap-1 flex-col">
-              <p className="text-[14px] text-gray-400">
+            <h1 className="hidden md:block font-bold uppercase ">
+              Cafena Cafe
+            </h1>
+            <div className="hidden md:flex gap-1 flex-col">
+              <p className="hidden md:block text-[14px] text-gray-400">
                 Raymond Boulevard 224,
               </p>
               <p className="text-[14px] text-gray-400">New York</p>
@@ -147,11 +155,11 @@ const Footer = () => {
         </div>
       </div>
       {/* copy right section */}
-      <div className="flex justify-between items-center bg-black  w-[100%] md:px-12 px-6 pb-[20px] pt-[15px]">
+      <div className="flex justify-between items-center bg-black  w-[100%] md:px-12 px-2 pb-[20px] pt-[15px]">
         <p className="hidden md:block text-white text-center text-[14px]">
           &copy; code Interactive.
         </p>
-        <div className="flex gap-6 items-center text-[20px]">
+        <div className="flex gap-6 items-center text-[15px] md:text-[20px]">
           <FaInstagram className="hover:text-primary hover:scale-110 duration-150" />
           <FaTwitter className="hover:text-primary hover:scale-110 duration-150" />
           <FaFacebook className="hover:text-primary hover:scale-110 duration-150" />
@@ -159,7 +167,9 @@ const Footer = () => {
           <FaGooglePlusG className="hover:text-primary hover:scale-110 duration-150" />
           <FaLinkedinIn className="hover:text-primary hover:scale-110 duration-150" />
         </div>
-        <p className="text-[14px]">2024 All Rights Reserved</p>
+        <p className="text-[12px] tracking-[1px] md:text-[14px]">
+          2024 All Rights Reserved
+        </p>
       </div>
     </div>
   );

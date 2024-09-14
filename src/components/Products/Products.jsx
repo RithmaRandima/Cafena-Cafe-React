@@ -53,7 +53,7 @@ const Products = () => {
         <hr className="w-[30%] mx-auto h-[3px] bg-primary rounded-sm mt-5" />
       </div>
       {/* card Section */}
-      <motion.div className="w-[100] %  h-[100%]">
+      <motion.div className="w-[100%]   h-[100%]">
         <Slider {...settings}>
           {productData.map((product) => {
             return (

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const ServiceCard = ({ image, title, subtitle }) => {
   return (
-    <div className="text-center p-4 space-y-6">
+    <div className=" md:w-[100%] w-[90%] mx-auto text-center p-4 space-y-6">
       <img
         src={image}
         alt=""

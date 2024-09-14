@@ -60,7 +60,7 @@ const AboutUs = () => {
         </Background>
 
         <div className="w-[100vw] md:w-[100%] h-[100%] grid grid-cols-1 md:grid-cols-2 items-center text-white py-10 ">
-          <div className="w-[90%] mx-auto ml-[50px]">
+          <div className="w-[90%] mx-auto md:ml-[50px]">
             <motion.p
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -83,7 +83,7 @@ const AboutUs = () => {
                 damping: 10,
                 delay: 1,
               }}
-              className="font-bold text-[33px] mb-6"
+              className="font-bold text-[26px] tmd:ext-[33px] mb-6"
             >
               USE OUR APPLICATION.
             </motion.h1>

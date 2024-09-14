@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import React from "react";
 import img1 from "../../assets/Newsletter-1.avif";
 import img2 from "../../assets/Newsletter-2.jpeg";
@@ -19,6 +18,7 @@ const Newsletter = () => {
       </div>
       {/* Content Section */}
       <div className="w-[80%] md:w-[95%] mx-auto h-[100%] gap-3 grid grid-cols-1 md:grid-cols-3">
+        {/* box 01 */}
         <div className="product-box md:w-[95%] py-[30px]">
           <div className="relative w-[100%] h-[230px] cursor-pointer">
             <img src={img1} alt="" className="w-[100%] h-[100%] object-cover" />
@@ -39,7 +39,7 @@ const Newsletter = () => {
             </p>
           </div>
         </div>
-
+        {/* box 02 */}
         <div className="product-box md:w-[95%] py-[30px]">
           <div className="relative w-[100%] h-[230px] cursor-pointer">
             <img src={img2} alt="" className="w-[100%] h-[100%] object-cover" />
@@ -60,8 +60,8 @@ const Newsletter = () => {
             </p>
           </div>
         </div>
-
-        <div className="product-box product-box-three md:w-[95%]  p-[40px] border-2 border-white flex justify-between flex-col text-white">
+        {/* box 03 */}
+        <div className="hidden md:flex product-box product-box-three md:w-[95%]  p-[40px] border-2 border-white  justify-between flex-col text-white">
           <h1 className="text-[20px] font-bold uppercase  mb-4">
             Opening Hours
           </h1>
