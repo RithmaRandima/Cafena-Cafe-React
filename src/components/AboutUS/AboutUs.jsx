@@ -21,6 +21,9 @@ const AboutUs = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
+    swipeToSlide: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 1024,
