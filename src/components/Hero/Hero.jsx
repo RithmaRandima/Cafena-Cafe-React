@@ -36,7 +36,7 @@ const Hero = () => {
                   type: "spring",
                   stiffness: 100,
                   damping: 10,
-                  delay: 1.2,
+                  delay: 0.2,
                 }}
                 className="relative"
               >
@@ -63,7 +63,7 @@ const Hero = () => {
                   type: "spring",
                   stiffness: 100,
                   damping: 10,
-                  delay: 1,
+                  delay: 0.3,
                 }}
                 src={CoffeeMain}
                 className="relative z-40 h-[270px]  md:h-[500px] img-shadow object-contain"
@@ -77,7 +77,7 @@ const Hero = () => {
                   type: "spring",
                   stiffness: 100,
                   damping: 10,
-                  delay: 1,
+                  delay: 0.5,
                 }}
                 className="absolute h-[150px] w-[150px] md:h-[180px] md:w-[180px] top-[100px] right-[-10px] md:top-20 md:right-[10px]  z-10 border-[20px] border-primary rounded-full"
               ></motion.div>

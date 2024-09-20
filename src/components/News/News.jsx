@@ -1,5 +1,4 @@
 import React from "react";
-import { productData } from "../../data/ProductData";
 import NewsBox from "../NewsBox/NewsBox";
 import { newsData } from "../../data/NewsData";
 
@@ -13,7 +12,7 @@ const News = () => {
     dots: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     speed: 1600,
     slidesToShow: 4,
     slidesToScroll: 1,

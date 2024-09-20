@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import {
   FaFacebook,
   FaGooglePlusG,
@@ -16,8 +15,8 @@ const Footer = () => {
     <div className="pt-12 text-white overflow-y-hidden">
       {/* Footer Top Images */}
       <div className="w-[100%] h-[150px] hidden md:grid grid-cols-4 md:grid-cols-8">
-        {FooterTopData.map((image) => {
-          return <FooterTopImgBox img={image} />;
+        {FooterTopData.map((image, i) => {
+          return <FooterTopImgBox img={image} key={i} />;
         })}
       </div>
       {/* Footer Middle */}

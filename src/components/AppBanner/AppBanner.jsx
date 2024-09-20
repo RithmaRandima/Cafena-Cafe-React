@@ -52,12 +52,13 @@ const AppBanner = () => {
         <div className="w-[100%] h-[40vh] md:h-[65vh] flex items-center md:pr-4">
           <div className="w-[100%] h-[45vh] md:h-[65vh] mx-auto">
             <Slider {...settings}>
-              {rightImages.map((images) => {
+              {rightImages.map((images, i) => {
                 return (
                   <img
                     src={images}
                     className="w-[100%] h-[40vh] md:h-[65vh] object-cover"
                     alt=""
+                    key={i}
                   />
                 );
               })}

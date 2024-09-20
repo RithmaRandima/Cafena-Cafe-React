@@ -13,7 +13,7 @@ const Products = () => {
     dots: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 35000,
     speed: 1600,
     slidesToShow: 4,
     slidesToScroll: 1,
